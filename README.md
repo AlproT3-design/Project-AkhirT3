@@ -28,10 +28,10 @@ Tujuan utama proyek adalah:
 | Nama      | Tugas/Branch                  |
 |-----------|-------------------------------|
 | Farrel    | Feature: Main Coder & Module  |
-| Randi     | Feature: Main Coder & Module  |
-| Geri      | Feature: Cek Kode Error       |
-| Matthew   | Feature: Cek Kode Error       |
-| Fadil     | Feature: laporan transaksi    |
-| Ghiyats   | Feature: Founder & Explainer  |
-| Wulan     | Feature: data dokum & report  |
-| Bilqhis   | Feature: data dokum & report  |
+| Randi     | Feature: Menu                 |
+| Geri      | Feature: Transaksi            |
+| Matthew   | Feature: Sorting              |
+| Fadil     | Feature: Save Data            |
+| Ghiyats   | Feature: Founder & Searching  |
+| Wulan     | Feature: Laporan & Edit Stok  |
+| Bilqhis   | Feature: Laporan & Add Buah   |
