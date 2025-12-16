@@ -27,7 +27,7 @@ Tujuan utama proyek adalah:
 ## Daftar Anggota
 | Nama      | Tugas/Branch                  |
 |-----------|-------------------------------|
-| Farrel    | Feature: Main Coder & Module  |
+| Farrel    | Feature: Main Coder & Moduler |
 | Randi     | Feature: Menu                 |
 | Geri      | Feature: Transaksi            |
 | Matthew   | Feature: Sorting              |
