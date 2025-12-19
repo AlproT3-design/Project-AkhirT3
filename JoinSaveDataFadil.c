@@ -1,4 +1,4 @@
-// Done by Farrel, re-konstruksi kode agar sesuai dengan main code structure.
+// Done by Fadil, reconstruct by Farrel. Direkonstruksi kode agar sesuai dengan main code structure.
 
 void saveData() {
     FILE *fp = fopen("data.bin", "wb");
