@@ -1,8 +1,8 @@
 # Toko Buah CLI - Proyek Akhir Alpro
-// Done by Farrel
+// Made by Farrel
 
-👉 **File utama:**  
-📄 [`AlproT3`](./main.c)
+**File utama:**  
+📄 [`AlproT3`](./AlproT3/main.c)
 
 ## Deskripsi Proyek
 Proyek ini adalah sistem CLI (Command Line Interface) untuk toko buah yang memudahkan pengelolaan stok dan transaksi dari toko buah.  
