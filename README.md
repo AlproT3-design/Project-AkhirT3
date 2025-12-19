@@ -1,4 +1,5 @@
 # Toko Buah CLI - Proyek Akhir Alpro
+// Done by Farrel
 
 ## Deskripsi Proyek
 Proyek ini adalah sistem CLI (Command Line Interface) untuk toko buah yang memudahkan pengelolaan stok dan transaksi dari toko buah.  
@@ -18,20 +19,20 @@ Tujuan utama proyek adalah:
 
 3. **User Interaction**  
    - Menampilkan menu interaktif dengan opsi jelas.  
-   - Memberikan notifikasi saat stok habis.  
+   - Memberikan notifikasi pada supplier saat stok habis.  
 
 4. **Fitur Tambahan (Opsional)**  
    - Warnai output untuk memanjakan mata (ANSI colors).  
-   - Auto-notifikasi kalau stok habis ke restocker.  
+   - Notifikasi kalau stok habis ke restocker.  
 
 ## Daftar Anggota
 | Nama      | Tugas/Branch                  |
 |-----------|-------------------------------|
-| Farrel    | Feature: Main Coder & Module  |
-| Randi     | Feature: Main Coder & Module  |
-| Geri      | Feature: Cek Kode Error       |
-| Matthew   | Feature: Cek Kode Error       |
-| Fadil     | Feature: laporan transaksi    |
-| Ghiyats   | Feature: Founder & Explainer  |
-| Wulan     | Feature: data dokum & report  |
-| Bilqhis   | Feature: data dokum & report  |
+| Farrel    | Feature: Main Coder & Moduler |
+| Randi     | Feature: Menu                 |
+| Geri      | Feature: Transaksi            |
+| Matthew   | Feature: Sorting              |
+| Fadil     | Feature: Save Data            |
+| Ghiyats   | Feature: Founder & Searching  |
+| Wulan     | Feature: Laporan & Edit Stok  |
+| Bilqhis   | Feature: Laporan & Add Buah   |
