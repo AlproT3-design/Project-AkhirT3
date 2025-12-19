@@ -2,11 +2,11 @@ void tugasBilqhis1() {
     char kodeInput[20];
     int found = -1;
 
-    printf("\n=== Tambah Buah Baru ===\n");
+    printf("\n=== Tambah Buah Baru / Update Stok ===\n");
     printf("Kode  : ");
     scanf("%s", kodeInput);
 
-    // Cek apakah kode sudah ada
+    // cek apakah kode sudah ada
     for (int i = 0; i < jumlahBuah; i++) {
         if (strcmp(daftarBuah[i].kode, kodeInput) == 0) {
             found = i;
@@ -15,31 +15,51 @@ void tugasBilqhis1() {
     }
 
     if (found != -1) {
-        // Jika buah sudah ada
+        // Buah sudah ada → update stok
         int tambahStok;
-        printf("Buah sudah ada!\n");
-        printf("Tambah stok: ");
-        scanf("%d", &tambahStok);
+        do {
+            printf("Buah sudah ada!\nTambah stok: ");
+            scanf("%d", &tambahStok);
+            if (tambahStok < 0) {
+                printf("Stok tidak boleh negatif!\n");
+            }
+        } while (tambahStok < 0);
 
         daftarBuah[found].stok += tambahStok;
-        printf("Stok berhasil diperbarui!\n");
+        printf("Stok berhasil diperbarui! Stok sekarang: %d\n", daftarBuah[found].stok);
+
     } else {
-        // Jika buah belum ada
+        // Buah baru → input data
         strcpy(daftarBuah[jumlahBuah].kode, kodeInput);
 
         printf("Nama  : ");
         scanf("%s", daftarBuah[jumlahBuah].nama);
 
-        printf("Stok  : ");
-        scanf("%d", &daftarBuah[jumlahBuah].stok);
+        int stokInput;
+        do {
+            printf("Stok  : ");
+            scanf("%d", &stokInput);
+            if (stokInput < 0) {
+                printf("Stok tidak boleh negatif!\n");
+            }
+        } while (stokInput < 0);
+        daftarBuah[jumlahBuah].stok = stokInput;
 
-        printf("Harga : ");
-        scanf("%f", &daftarBuah[jumlahBuah].harga);
+        float hargaInput;
+        do {
+            printf("Harga : ");
+            scanf("%f", &hargaInput);
+            if (hargaInput < 0) {
+                printf("Harga tidak boleh negatif!\n");
+            }
+        } while (hargaInput < 0);
+        daftarBuah[jumlahBuah].harga = hargaInput;
 
         jumlahBuah++;
         printf("Buah baru berhasil ditambahkan!\n");
     }
 }
+
 
 void tugasBilqhis2() {
     printf("\n=== Daftar Buah ===\n");
@@ -58,4 +78,5 @@ void tugasBilqhis2() {
     }
 
 }
+
 
