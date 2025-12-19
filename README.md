@@ -3,6 +3,8 @@
 
 **File utama:**  
 📄 [`AlproT3`](./AlproT3/main.c)
+JIKA ingin di run, download file zip, ekstrak, lalu run di folder yang sama.
+Agar file binary dapat ditarik oleh main.c sebagai save data.
 
 ## Deskripsi Proyek
 Proyek ini adalah sistem CLI (Command Line Interface) untuk toko buah yang memudahkan pengelolaan stok dan transaksi dari toko buah.  
