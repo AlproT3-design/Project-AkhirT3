@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1766174534 source:c:\users\farrel satriano\onedrive\documents\alprot3\alprot3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
