@@ -19,11 +19,11 @@ Tujuan utama proyek adalah:
 
 3. **User Interaction**  
    - Menampilkan menu interaktif dengan opsi jelas.  
-   - Memberikan notifikasi saat stok habis.  
+   - Memberikan notifikasi pada supplier saat stok habis.  
 
 4. **Fitur Tambahan (Opsional)**  
    - Warnai output untuk memanjakan mata (ANSI colors).  
-   - Auto-notifikasi kalau stok habis ke restocker.  
+   - Notifikasi kalau stok habis ke restocker.  
 
 ## Daftar Anggota
 | Nama      | Tugas/Branch                  |
