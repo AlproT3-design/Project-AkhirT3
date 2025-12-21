@@ -1,37 +1,37 @@
-#include <stdio.h>
-#include <string.h>
-
 void tugasWulan1() {
-    char kodeEdit[10];
-    int found = -1;
-
-    printf("\n=== Edit Data Buah ===\n");
-    printf("Masukkan kode buah yang ingin diedit: ");
-    scanf("%s", kodeEdit);
+    char kode[10];
+    printf("Kode buah: ");
+    scanf("%s", kode);
 
     for (int i = 0; i < jumlahBuah; i++) {
-        if (strcmp(daftarBuah[i].kode, kodeEdit) == 0) {
-            found = i;
-            break;
+        if (strcmp(daftarBuah[i].kode, kode) == 0) {
+
+            getchar(); // bersihkan buffer newline
+            printf("Nama baru  : ");
+            fgets(daftarBuah[i].nama,
+                   sizeof(daftarBuah[i].nama),
+                   stdin);
+
+            // hapus newline
+            daftarBuah[i].nama[
+                strcspn(daftarBuah[i].nama, "\n")
+            ] = '\0';
+
+            printf("Stok baru  : ");
+            scanf("%d", &daftarBuah[i].stok);
+
+            printf("Harga baru : ");
+            scanf("%f", &daftarBuah[i].harga);
+
+            printf("Data diperbarui.\n");
+            saveData();
+            return;
         }
     }
 
-    if (found == -1) {
-        printf("Buah dengan kode tersebut tidak ditemukan!\n");
-        return;
-    }
-
-    printf("Nama baru  : ");
-    scanf("%s", daftarBuah[found].nama);
-
-    printf("Stok baru  : ");
-    scanf("%d", &daftarBuah[found].stok);
-
-    printf("Harga baru : ");
-    scanf("%f", &daftarBuah[found].harga);
-
-    printf("Data buah berhasil diperbarui!\n");
+    printf("Buah tidak ditemukan.\n");
 }
+
 
 void tugasWulan2() {
     char kodeHapus[10];
@@ -60,3 +60,4 @@ void tugasWulan2() {
     jumlahBuah--;
     printf("Buah berhasil dihapus!\n");
 }
+
