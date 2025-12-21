@@ -75,8 +75,16 @@ void tugasBilqhis1() {
     // Buah baru → input data
     strcpy(daftarBuah[jumlahBuah].kode, kodeInput);
 
+    getchar(); // bersihkan sisa newline dari scanf
     printf("Nama  : ");
-    scanf("%s", daftarBuah[jumlahBuah].nama);
+    fgets(daftarBuah[jumlahBuah].nama,
+           sizeof(daftarBuah[jumlahBuah].nama),
+           stdin);
+
+    // hapus karakter newline
+    daftarBuah[jumlahBuah].nama[
+        strcspn(daftarBuah[jumlahBuah].nama, "\n")
+    ] = '\0';
 
     int stokInput;
     do {
@@ -127,15 +135,31 @@ void tugasWulan1() {
 
     for (int i = 0; i < jumlahBuah; i++) {
         if (strcmp(daftarBuah[i].kode, kode) == 0) {
-            printf("Nama baru  : "); scanf("%s", daftarBuah[i].nama);
-            printf("Stok baru  : "); scanf("%d", &daftarBuah[i].stok);
-            printf("Harga baru : "); scanf("%f", &daftarBuah[i].harga);
+
+            getchar(); // bersihkan buffer newline
+            printf("Nama baru  : ");
+            fgets(daftarBuah[i].nama,
+                   sizeof(daftarBuah[i].nama),
+                   stdin);
+
+            // hapus newline
+            daftarBuah[i].nama[
+                strcspn(daftarBuah[i].nama, "\n")
+            ] = '\0';
+
+            printf("Stok baru  : ");
+            scanf("%d", &daftarBuah[i].stok);
+
+            printf("Harga baru : ");
+            scanf("%f", &daftarBuah[i].harga);
+
             printf("Data diperbarui.\n");
+            saveData();
             return;
         }
     }
+
     printf("Buah tidak ditemukan.\n");
-    saveData();
 }
 
 void tugasWulan2() {
